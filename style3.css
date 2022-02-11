@@ -1,0 +1,145 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui;
+}
+
+body {
+    padding: 10%;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background: #C0D8C0;
+}
+
+#container {
+    height: 430px;
+    width: 900px;
+	padding: 40px;
+    background: #F5EEDC;
+    display: flex;
+	text-align: center;
+}
+
+#calculator {
+    height: 430px;
+    width: 900px;
+    padding: 20px;
+	color: #313552;
+}
+
+#calculator h2 {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px 0;
+    color: #313552;
+}
+
+#calculator input[type="text"] {
+    height: 45px;
+    width: 310px;
+    margin: 10px 0;
+    padding: 0px 15px;
+    border: 2px solid #313552;
+    outline: none;
+    background: #f3f8ff;
+    color: #313552;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+#calculator input[type="text"]::placeholder {
+    color: #313552;
+	padding: 0px 15px;
+}
+
+#calculator input[type="submit"] {
+    height: 50px;
+    width: 310px;
+    margin: 20px 0;
+    padding: 0px 15px;
+    border: none;
+    outline: none;
+    background: #313552;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+	border-radius: 50px 50px;
+}
+
+#calculator #yourBMI {
+    font-size: 20px;
+    color: #313552;
+    font-weight: 800;
+	text-align: center;
+}
+
+/*BMI GUIDE*/
+
+.category{
+    width: 60%;
+    margin: auto;
+    margin-bottom: 10%;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 80px;
+}
+
+.category h1{
+    font-size: 36px;
+    font-weight: 600;
+    color: #313552;
+}
+
+.category p{
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row2{
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.category h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.category-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+.category img{
+    width: 125px;
+    height: 150px;
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction:column;
+    }
+}
+
+

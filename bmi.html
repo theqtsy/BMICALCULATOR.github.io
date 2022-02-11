@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>BMI Calculator</title>
+	<meta name="viewport" content="with=device-width, initial scale=1.0">
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style3.css">
+    <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+</head>
+<body>
+
+	<!--HEADER-->
+	<section class="start">
+		<header>
+
+			<div class="container">
+		
+					<a href="bmi.html" class="logo"><span>B</span>M<span>I</span><span><br>Cal</span>cul<span>ator</span></a>
+		
+				<nav class="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li class="active"><a href="bmi.html">BMI Calculator</a></li>
+					</ul>
+				</nav>
+			
+				<div class="fas fa-bars"></div>
+			
+			</div>
+			
+		</header>
+	</section>
+
+	<!--CALCULATOR-->
+    <div id="container">
+        <div id="calculator">
+            <h2>CALCULATE</h2>
+            <input type="text" name="bmi" id="weight" placeholder="Weight In KG">
+            <input type="text" name="bmi" id="height" placeholder="Height In CM">
+            <input type="submit" value="Calculate" id="calculate">
+            <div id="yourBMI">Your BMI Is : <span>00</span></div>
+			<div class = "bmi-output">
+				<p id = "bmi-category"></p>
+			</div>
+        </div>
+    </div>
+
+    <!---BMI GUIDE-->
+    <section class="category">
+        <h1>BMI Guideline</h1>
+        <p>Please refer to this guideline to know your BMI status!</p>
+    
+        <div class="row">
+            <div class="category-col">
+            <img src="images/underweight.png">
+            <br><br>
+            <h3>Underweight</h3>
+            <p>BMI range (kg/m²): < 18.5<br>Health risk: Malnutrition risk</p>
+            </div>
+        
+            <div class="category-col">
+                <img src="images/normal.png">
+                <br><br>
+                <h3>Normal Weight</h3>
+                <p>BMI range (kg/m²): 18.5 - 24.9<br>Health risk: Low risk</p>
+            </div>
+
+            <div class="category-col">
+                <img src="images/overweight.png">
+                <br><br>
+                <h3>Overweight</h3>
+                <p>BMI range (kg/m²): 25.0 - 29.9<br>Health risk: Enhanced risk</p>
+            </div>
+        </div>
+        <div class="row2">
+            <div class="category-col">
+                <img src="images/moderate.png">
+                <br><br>
+                <h3>Moderately Obese</h3>
+                <p>BMI range (kg/m²): 30.0 - 34.9<br>Health risk: Moderate risk</p>
+            </div>
+
+            <div class="category-col">
+                <img src="images/severe.png">
+                <br><br>
+                <h3>Severely Obese</h3>
+                <p>BMI range (kg/m²): 35.0 - 39.9<br>Health risk: High risk</p>
+            </div>
+
+            <div class="category-col">
+                <img src="images/morbid.png">
+                <br><br>
+                <h3>Morbidly Obese</h3>
+                <p>BMI range (kg/m²): > = 40.0<br>Health risk: Very high risk</p>
+            </div>
+        </div>
+	</section>
+
+    <script src= "files.js"></script>
+
+</body>
+</html>
